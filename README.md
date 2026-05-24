@@ -2,6 +2,10 @@
 
 This directory is a static public website package for Stripe account activation.
 
+Published copy:
+
+- https://sryharsha781-ctrl.github.io/openclaw-automation-studio/
+
 Stripe asks for a business website, social profile, or app URL so customers and
 Stripe can understand what is being sold. This package includes:
 

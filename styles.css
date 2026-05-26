@@ -98,6 +98,8 @@ h3 { font-size: 19px; margin: 0 0 10px; }
   font-family: var(--mono);
   font-size: 13px;
 }
+.pay-row { margin-top: 16px; }
+.pay-button { width: 100%; }
 .split { display: grid; grid-template-columns: .8fr 1.2fr; gap: 32px; align-items: start; }
 .steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
 .steps li {

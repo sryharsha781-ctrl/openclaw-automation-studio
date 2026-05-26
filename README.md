@@ -18,10 +18,10 @@ Stripe can understand what is being sold. This package includes:
 Safety boundary:
 
 - No Stripe API keys.
-- No checkout or payment code.
+- No embedded checkout code; payments use hosted Stripe Payment Links.
 - No private operator identity details.
-- No live payment collection until the operator publishes the site and finishes
-  Stripe activation manually.
+- Live payment collection is limited to the approved fixed-scope offers listed
+  on the site.
 
 Suggested publishing options:
 
@@ -41,3 +41,7 @@ After publishing:
    ```
 
 2. Paste the same public HTTPS URL into Stripe as the business website.
+
+## Stripe payments
+
+This site now uses one-time Stripe Payment Links for the approved offers. No card data or Stripe secret key is stored in this repository.

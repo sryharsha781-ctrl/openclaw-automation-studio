@@ -1,0 +1,34 @@
+name: Audit or service inquiry
+description: Ask about a fixed-scope audit, configuration review, or website QA pilot. Public information only.
+title: "Service inquiry: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form creates a public GitHub issue. Do not include passwords, API keys, customer records, payment details, private source code, or confidential files. We will arrange a private channel if needed.
+  - type: input
+    id: public_url
+    attributes:
+      label: Public project URL (optional)
+      description: Link only to a site or repository that is already public.
+      placeholder: https://example.com
+  - type: textarea
+    id: goal
+    attributes:
+      label: What would you like reviewed?
+      description: Describe the workflow or configuration at a high level, without private details.
+    validations:
+      required: true
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service of interest
+      options:
+        - AI Architecture Audit ($499)
+        - OpenClaw OS Config Review ($99)
+        - Code Quality Spec Bundle ($49)
+        - Website QA Pilot ($50)
+        - Unsure; please scope it
+    validations:
+      required: true
